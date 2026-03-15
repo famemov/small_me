@@ -205,7 +205,7 @@ h1 {
   justify-content: flex-end;
   background:
     linear-gradient(rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.08)),
-    url("site1/6.png") center/cover;
+    url("images/timofey-6.png") center/cover;
   overflow: hidden;
 }
 
@@ -528,3 +528,4 @@ figcaption {
     flex-direction: column;
   }
 }
+
