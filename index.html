@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тимофей — творческая страница</title>
+  <meta
+    name="description"
+    content="Небольшой персональный сайт Тимофея: о себе, интересах, опыте и целях."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Cormorant+Garamond:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero">
+      <nav class="topbar">
+        <span class="brand">timofey</span>
+        <a class="ghost-link" href="#links">ссылки</a>
+      </nav>
+
+      <div class="hero-layout">
+        <div class="hero-copy">
+          <p class="eyebrow">творческое задание</p>
+          <h1 id="hero-name">Тимофей</h1>
+          <p class="lead" id="hero-intro"></p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#about">обо мне</a>
+            <a class="button button-secondary" href="#mentorship">мои цели</a>
+          </div>
+        </div>
+
+        <aside class="hero-card">
+          <p class="card-label">сейчас мой фокус</p>
+          <h2 id="focus-title"></h2>
+          <p id="focus-text"></p>
+        </aside>
+      </div>
+    </header>
+
+    <main>
+      <section class="section" id="about">
+        <div class="section-heading">
+          <p class="eyebrow">кто я</p>
+          <h2>Коротко обо мне</h2>
+        </div>
+
+        <div class="about-grid">
+          <article class="panel quote-panel">
+            <p class="quote-mark">"</p>
+            <p class="quote-text" id="quote-text"></p>
+          </article>
+
+          <article class="panel facts-panel">
+            <h3>Несколько фактов обо мне</h3>
+            <div class="fact-list" id="fact-list"></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="energy">
+        <div class="section-heading">
+          <p class="eyebrow">что меня формирует</p>
+          <h2>Интересы и сильные стороны</h2>
+        </div>
+
+        <div class="card-grid" id="interest-grid"></div>
+      </section>
+
+      <section class="section timeline-section" id="mentorship">
+        <div class="section-heading">
+          <p class="eyebrow">куда я иду</p>
+          <h2>Почему мне важно развитие рядом с сильными людьми</h2>
+        </div>
+
+        <div class="timeline" id="timeline"></div>
+      </section>
+
+      <section class="section" id="links">
+        <div class="section-heading">
+          <p class="eyebrow">где меня найти</p>
+          <h2>Ссылки и контакты</h2>
+        </div>
+
+        <div class="links-grid" id="links-grid"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p id="footer-note"></p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
