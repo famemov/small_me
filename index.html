@@ -3,94 +3,183 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Тимофей — творческая страница</title>
+  <title>Тимофей // личное дело</title>
   <meta
     name="description"
-    content="Небольшой персональный сайт Тимофея: о себе, интересах, опыте и целях."
+    content="Запоминающийся и смешной сайт про Тимофея: шесть фото, немного самоиронии и цифровые следы в интернете."
   >
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Cormorant+Garamond:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div class="noise"></div>
   <div class="page-shell">
     <header class="hero">
       <nav class="topbar">
-        <span class="brand">timofey</span>
-        <a class="ghost-link" href="#links">ссылки</a>
+        <span class="brand">TIMOFEY / DOSSIER</span>
+        <a class="ghost-link" href="#links">цифровые следы</a>
       </nav>
 
       <div class="hero-layout">
         <div class="hero-copy">
-          <p class="eyebrow">творческое задание</p>
-          <h1 id="hero-name">Тимофей</h1>
-          <p class="lead" id="hero-intro"></p>
+          <p class="eyebrow">личное дело №18</p>
+          <h1>Тимофей</h1>
+          <p class="lead">
+            18 лет. Бывший баскетболист. Текущая версия: немного программист.
+            Выглядит так, будто либо сейчас соберет проект, либо случайно станет мемом.
+            Скорее всего и то и другое.
+          </p>
 
           <div class="hero-actions">
-            <a class="button button-primary" href="#about">обо мне</a>
-            <a class="button button-secondary" href="#mentorship">мои цели</a>
+            <a class="button button-primary" href="https://youtube.com/@14devstvenic" target="_blank" rel="noreferrer">YouTube</a>
+            <a class="button button-secondary" href="https://t.me/KaPl1k" target="_blank" rel="noreferrer">Telegram</a>
+            <a class="button button-secondary" href="https://github.com/famemov" target="_blank" rel="noreferrer">GitHub</a>
           </div>
         </div>
 
         <aside class="hero-card">
-          <p class="card-label">сейчас мой фокус</p>
-          <h2 id="focus-title"></h2>
-          <p id="focus-text"></p>
+          <p class="card-label">текущий статус</p>
+          <p class="status-line" id="status-line">сканируем уровень серьезности...</p>
+          <div class="meter">
+            <span class="meter-fill" id="meter-fill"></span>
+          </div>
+          <p class="microcopy">Система не смогла определить, это будущий разработчик или уже готовая реакция для стикерпаков.</p>
         </aside>
       </div>
     </header>
 
     <main>
-      <section class="section" id="about">
+      <section class="section stats-section" id="summary">
         <div class="section-heading">
-          <p class="eyebrow">кто я</p>
-          <h2>Коротко обо мне</h2>
+          <p class="eyebrow">сводка</p>
+          <h2>Что известно точно</h2>
         </div>
 
-        <div class="about-grid">
-          <article class="panel quote-panel">
-            <p class="quote-mark">"</p>
-            <p class="quote-text" id="quote-text"></p>
+        <div class="stats-grid">
+          <article class="stat-card">
+            <span class="stat-label">возраст</span>
+            <strong>18</strong>
+            <p>Уже не ребенок, еще не корпорация.</p>
           </article>
-
-          <article class="panel facts-panel">
-            <h3>Несколько фактов обо мне</h3>
-            <div class="fact-list" id="fact-list"></div>
+          <article class="stat-card">
+            <span class="stat-label">предыдущая версия</span>
+            <strong>баскетбол</strong>
+            <p>Оттуда остались выносливость, темп и привычка держать удар.</p>
+          </article>
+          <article class="stat-card">
+            <span class="stat-label">текущая сборка</span>
+            <strong>код</strong>
+            <p>Разбирается в программировании без лишнего шума и пафоса.</p>
+          </article>
+          <article class="stat-card">
+            <span class="stat-label">репутация</span>
+            <strong id="seriousness-score">92%</strong>
+            <p>Серьезность плавающая, харизма стабильная.</p>
           </article>
         </div>
       </section>
 
-      <section class="section" id="energy">
+      <section class="section" id="evidence">
         <div class="section-heading">
-          <p class="eyebrow">что меня формирует</p>
-          <h2>Интересы и сильные стороны</h2>
+          <p class="eyebrow">фотоархив</p>
+          <h2>Шесть доказательств, что это не нейросеть</h2>
         </div>
 
-        <div class="card-grid" id="interest-grid"></div>
+        <div class="gallery-grid">
+          <figure class="photo-card photo-tall">
+            <img src="site1/1.jpg" alt="Тимофей с волосами на лице и максимально невозмутимым выражением">
+            <figcaption>режим скрытности: лицо видно не полностью, но вайб считывается идеально</figcaption>
+          </figure>
+
+          <figure class="photo-card photo-wide">
+            <img src="site1/2.jpg" alt="Тимофей с другом дома за столом">
+            <figcaption>переговоры с союзниками прошли успешно, торт пострадал</figcaption>
+          </figure>
+
+          <figure class="photo-card">
+            <img src="site1/6.png" alt="Тимофей с видеокамерой и своим лицом на экране">
+            <figcaption>если на YouTube нужен трейлер, он уже буквально здесь</figcaption>
+          </figure>
+
+          <figure class="photo-card">
+            <img src="site1/3.JPG" alt="Тимофей ночью на улице">
+            <figcaption>кадр, в котором город думает, что это обложка сингла</figcaption>
+          </figure>
+
+          <figure class="photo-card">
+            <img src="site1/4.jpg" alt="Тимофей стоит у воды на фоне заката">
+            <figcaption>официальное подтверждение, что он умеет просто стоять и уже выглядит как сюжет</figcaption>
+          </figure>
+
+          <figure class="photo-card">
+            <img src="site1/5.jpg" alt="Крупный портрет Тимофея в красной футболке">
+            <figcaption>взгляд человека, который либо дебажит код, либо оценивает твой плейлист</figcaption>
+          </figure>
+        </div>
       </section>
 
-      <section class="section timeline-section" id="mentorship">
+      <section class="section" id="profile">
         <div class="section-heading">
-          <p class="eyebrow">куда я иду</p>
-          <h2>Почему мне важно развитие рядом с сильными людьми</h2>
+          <p class="eyebrow">характеристика</p>
+          <h2>Нормальная версия правды</h2>
         </div>
 
-        <div class="timeline" id="timeline"></div>
+        <div class="profile-grid">
+          <article class="panel panel-quote">
+            <p class="quote-mark">//</p>
+            <p class="quote-text">
+              Без лишних легенд: Тимофей не пытается выглядеть слишком правильным.
+              В этом и плюс. Он скорее из тех, кто спокойно набирает форму, чем громко обещает.
+            </p>
+          </article>
+
+          <article class="panel panel-list">
+            <h3>Коротко, по делу</h3>
+            <ul class="fact-list">
+              <li>Спортивное прошлое дает дисциплину, а не только красивые истории про "характер".</li>
+              <li>Программирование заходит именно потому, что там можно доказывать все не словами, а результатом.</li>
+              <li>По фото видно: человек умеет быть одновременно нормальным, смешным и неожиданно кинематографичным.</li>
+              <li>Если делать запоминающийся сайт про Тимофея, то только такой, который чуть абсурден и поэтому честный.</li>
+            </ul>
+          </article>
+        </div>
       </section>
 
       <section class="section" id="links">
         <div class="section-heading">
-          <p class="eyebrow">где меня найти</p>
-          <h2>Ссылки и контакты</h2>
+          <p class="eyebrow">контакты</p>
+          <h2>Куда ведут цифровые следы</h2>
         </div>
 
-        <div class="links-grid" id="links-grid"></div>
+        <div class="links-grid">
+          <a class="link-card" href="https://youtube.com/@14devstvenic" target="_blank" rel="noreferrer">
+            <span class="link-kind">youtube</span>
+            <h3>@14devstvenic</h3>
+            <p>Главный выход в медиапространство. Видео, вайб и доказательства, что камера его не боится.</p>
+            <span class="link-arrow">открыть канал</span>
+          </a>
+
+          <a class="link-card" href="https://t.me/KaPl1k" target="_blank" rel="noreferrer">
+            <span class="link-kind">telegram</span>
+            <h3>@KaPl1k</h3>
+            <p>Самый короткий маршрут, если нужно написать Тимофею без официальных церемоний.</p>
+            <span class="link-arrow">перейти</span>
+          </a>
+
+          <a class="link-card" href="https://github.com/famemov" target="_blank" rel="noreferrer">
+            <span class="link-kind">github</span>
+            <h3>famemov</h3>
+            <p>Следы в коде. Туда лучше идти тем, кто любит смотреть не слова, а реальные файлы.</p>
+            <span class="link-arrow">смотреть код</span>
+          </a>
+        </div>
       </section>
     </main>
 
     <footer class="footer">
-      <p id="footer-note"></p>
+      <p>Сайт собран без лишнего пафоса, зато с уликами, самоиронией и технически подтвержденным присутствием Тимофея в интернете.</p>
     </footer>
   </div>
 
